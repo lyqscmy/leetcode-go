@@ -1,5 +1,38 @@
 package leetcode
 
+import (
+	"strconv"
+	"strings"
+)
+
+func Search(xs []int, x int) int {
+	i, j := 0, len(xs)
+	for i < j {
+		// i<=h<j
+		h := int(uint(i+j) >> 1)
+		if xs[h] < x {
+			i = h + 1
+		} else {
+			j = h
+		}
+	}
+	return i
+}
+
+func findMin(nums []int) int {
+	i, j := 0, len(nums)
+	for i < j {
+		h := int(uint(i+j) >> 1)
+		if nums[i] < nums[h] {
+			i = h + 1
+		} else {
+			j = h
+		}
+
+	}
+	return i
+}
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -124,4 +157,99 @@ func Compare(a, b []int) bool {
 		}
 	}
 	return true
+}
+
+func findPeakElement(nums []int) int {
+	N := len(nums)
+	for i := 0; i < N-1; i++ {
+		if nums[i] > nums[i+1] {
+			return i
+		}
+	}
+	return N - 1
+}
+
+func ParseInt(s string) int32 {
+	var n int32 = 0
+	var cutoff int32 = (1<<32)/10 + 1
+	for i := 0; i < len(s); i++ {
+		if n >= cutoff {
+			return -1
+		}
+		n *= 10
+		n1 := n + int32(s[i]-'0')
+		if n1 < n {
+			return -1
+		}
+		n = n1
+	}
+	return n
+}
+
+func Search(xs []int, x int) int {
+	i, j := 0, len(xs)
+	for i < j {
+		// i<= h < j
+		h := int(uint(i+j) >> 1)
+		if x > xs[h] {
+			i = h + 1
+		} else {
+			j = h
+		}
+	}
+	return i
+}
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func (this *ListNode) String() string {
+	var b strings.Builder
+	for this != nil {
+		b.WriteString(strconv.Itoa(this.Val))
+		b.WriteString("->")
+		this = this.Next
+	}
+	return b.String()[0 : b.Len()-2]
+}
+
+func (this *ListNode) equal(other *ListNode) bool {
+	for this != nil && other != nil {
+		if this.Val != other.Val {
+			return false
+		}
+		this = this.Next
+		other = other.Next
+	}
+
+	if this != nil || other != nil {
+		return false
+	}
+
+	return true
+}
+
+func addList(l1 *ListNode, l2 *ListNode) *ListNode {
+	dumy := &ListNode{}
+	node := dumy
+	carry := 0
+	for l1 != nil || l2 != nil {
+		if l1 != nil {
+			carry += l1.Val
+			l1 = l1.Next
+		}
+		if l2 != nil {
+			carry += l2.Val
+			l2 = l2.Next
+		}
+		node.Next = &ListNode{carry % 10, nil}
+		node = node.Next
+		carry /= 10
+	}
+	if carry != 0 {
+		node.Next = &ListNode{carry, nil}
+	}
+	return dumy.Next
 }
