@@ -1,10 +1,6 @@
 package leetcode
 
-import (
-	"strconv"
-	"strings"
-)
-
+// Search do
 func Search(xs []int, x int) int {
 	i, j := 0, len(xs)
 	for i < j {
@@ -31,80 +27,6 @@ func findMin(nums []int) int {
 
 	}
 	return i
-}
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
-func (root *TreeNode) equal(other *TreeNode) bool {
-	return false
-}
-
-func (root *TreeNode) findLeftMostBottomNode() int {
-	res := []int{-1}
-	res = root.findLeftMostBottomNodeImpl(1, res)
-	return res[len(res)-1]
-}
-
-func (root *TreeNode) findLeftMostBottomNodeImpl(index int, res []int) []int {
-	if root == nil {
-		return res
-	}
-
-	if index > len(res) {
-		res = append(res, root.Val)
-	}
-
-	res = root.Left.findLeftMostBottomNodeImpl(index+1, res)
-	res = root.Right.findLeftMostBottomNodeImpl(index+1, res)
-	return res
-}
-
-type Deque struct {
-	items  []int
-	head   int
-	tail   int
-	length int
-}
-
-func NewDeque(n int) *Deque {
-	return &Deque{make([]int, n+1), 0, 0, 0}
-}
-
-func (d *Deque) AddFirst(e int) {
-	d.length++
-	d.head = dec(d.head, len(d.items))
-	d.items[d.head] = e
-}
-
-func dec(i int, modulus int) int {
-	if i == 0 {
-		i = modulus - 1
-	} else {
-		i--
-	}
-	return i
-}
-func (d *Deque) AddLast(e int) {}
-
-// func (d *Deque) RemoveFirst() int {}
-func (d *Deque) RemoveLast() int {
-	d.length--
-	d.tail = dec(d.tail, len(d.items))
-	return d.items[d.tail]
-}
-func (d *Deque) Len() int { return d.length }
-func (d *Deque) Items() []int {
-	items := make([]int, 0, d.length)
-	head := d.head
-	for head != d.tail {
-		items = append(items, d.items[head])
-		head = dec(head, len(d.items))
-	}
-	return items
 }
 
 // left to right = top to bottom
@@ -142,6 +64,7 @@ func htod(h []int) []int {
 	return d
 }
 
+// Compare do
 func Compare(a, b []int) bool {
 	if a == nil && b == nil {
 		return true
@@ -169,6 +92,8 @@ func findPeakElement(nums []int) int {
 	return N - 1
 }
 
+
+// ParseInt do
 func ParseInt(s string) int32 {
 	var n int32 = 0
 	var cutoff int32 = (1<<32)/10 + 1
@@ -186,50 +111,7 @@ func ParseInt(s string) int32 {
 	return n
 }
 
-func Search(xs []int, x int) int {
-	i, j := 0, len(xs)
-	for i < j {
-		// i<= h < j
-		h := int(uint(i+j) >> 1)
-		if x > xs[h] {
-			i = h + 1
-		} else {
-			j = h
-		}
-	}
-	return i
-}
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func (this *ListNode) String() string {
-	var b strings.Builder
-	for this != nil {
-		b.WriteString(strconv.Itoa(this.Val))
-		b.WriteString("->")
-		this = this.Next
-	}
-	return b.String()[0 : b.Len()-2]
-}
-
-func (this *ListNode) equal(other *ListNode) bool {
-	for this != nil && other != nil {
-		if this.Val != other.Val {
-			return false
-		}
-		this = this.Next
-		other = other.Next
-	}
-
-	if this != nil || other != nil {
-		return false
-	}
-
-	return true
-}
 
 func addList(l1 *ListNode, l2 *ListNode) *ListNode {
 	dumy := &ListNode{}
