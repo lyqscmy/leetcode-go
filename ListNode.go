@@ -11,6 +11,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+
 func (l *ListNode) String() string {
 	var b strings.Builder
 	for l != nil {
