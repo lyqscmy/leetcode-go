@@ -1,5 +1,90 @@
 package leetcode
 
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	if n == 0 {
+		return
+	}
+
+	if m == 0 {
+		copy(nums1, nums2)
+		return
+	}
+
+	copy(nums1[n:], nums1[:m])
+	for i, j, k := n, 0, 0; j < n; k++ {
+		// fmt.Println(nums1[:k], nums1[i:], nums2[j:])
+		if i >= m+n {
+			copy(nums1[k:], nums2[j:])
+			break
+		}
+
+		if nums1[i] < nums2[j] {
+			nums1[k] = nums1[i]
+			i++
+		} else {
+			nums1[k] = nums2[j]
+			j++
+		}
+	}
+}
+
+func reverse(nums1 []int, from int, to int) {
+	for from < to {
+		nums1[from], nums1[to] = nums1[to], nums1[from]
+		from++
+		to--
+	}
+}
+
+func searchMatrix(matrix [][]int, target int) bool {
+	m := len(matrix)
+	if m == 0 {
+		return false
+	}
+	n := len(matrix[0])
+
+	for i, j := m-1, 0; i >= 0 && j < n; {
+		if target == matrix[i][j] {
+			return true
+		}
+		if target > matrix[i][j] {
+			j++
+		} else {
+			i--
+		}
+	}
+	return false
+}
+
+func majorityElement(nums []int) int {
+	res := 0
+	count := 0
+	for _, num := range nums {
+		if count == 0 {
+			res, count = num, 0
+		}
+		if num != res {
+			count--
+		} else {
+			count++
+		}
+	}
+	return res
+}
+
+/**
+ * 1. a ^ a = 0 归零律
+ * 2. a ^ 0 = a 恒等律
+ * 3. a ^ b ^ c = a ^ c ^ b 交换律
+ */
+func singleNumber(nums []int) int {
+	res := 0
+	for _, num := range nums {
+		res ^= num
+	}
+	return res
+}
+
 // Search do
 func Search(xs []int, x int) int {
 	i, j := 0, len(xs)
@@ -92,7 +177,6 @@ func findPeakElement(nums []int) int {
 	return N - 1
 }
 
-
 // ParseInt do
 func ParseInt(s string) int32 {
 	var n int32 = 0
@@ -110,8 +194,6 @@ func ParseInt(s string) int32 {
 	}
 	return n
 }
-
-
 
 func addList(l1 *ListNode, l2 *ListNode) *ListNode {
 	dumy := &ListNode{}

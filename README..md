@@ -7,3 +7,7 @@
 # 滑动窗口
 [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+[只出现一次的数字](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1106/)
+[多数元素](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1107/)
+[搜索二维矩阵 II](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1108/)
+[合并两个有序数组](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1109/)
