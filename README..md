@@ -1,3 +1,6 @@
+121. [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+122. [买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+59. [队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 2. [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) 
 206. [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 92. [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)

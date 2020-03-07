@@ -114,21 +114,21 @@ func findMin(nums []int) int {
 	return i
 }
 
-// left to right = top to bottom
-func dtoh(d []int) []int {
-	n := len(d)
-	h := NewDeque(n)
-	for i := 0; i < n; i++ {
-		// step 2
-		if h.Len() != 0 {
-			h.AddFirst(h.RemoveLast())
-		}
+// // left to right = top to bottom
+// func dtoh(d []int) []int {
+// 	n := len(d)
+// 	h := NewDeque(n)
+// 	for i := 0; i < n; i++ {
+// 		// step 2
+// 		if h.Len() != 0 {
+// 			h.AddFirst(h.RemoveLast())
+// 		}
 
-		// step 1
-		h.AddFirst(d[i])
-	}
-	return h.Items()
-}
+// 		// step 1
+// 		h.AddFirst(d[i])
+// 	}
+// 	return h.Items()
+// }
 
 // left to right = top to bottom
 func htod(h []int) []int {

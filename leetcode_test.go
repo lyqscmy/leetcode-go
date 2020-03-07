@@ -42,14 +42,14 @@ func TestHtod(t *testing.T) {
 	}
 }
 
-func TestDtoh(t *testing.T) {
-	want := []int{1, 2, 3, 4}
-	d := []int{4, 2, 3, 1}
-	got := dtoh(d)
-	if Compare(got, want) {
-		t.Errorf("got %v, want %v", got, want)
-	}
-}
+// func TestDtoh(t *testing.T) {
+// 	want := []int{1, 2, 3, 4}
+// 	d := []int{4, 2, 3, 1}
+// 	got := dtoh(d)
+// 	if Compare(got, want) {
+// 		t.Errorf("got %v, want %v", got, want)
+// 	}
+// }
 
 func TestFindPeakElement(t *testing.T) {
 	var tests = []struct {
