@@ -1,33 +1,5 @@
 package leetcode
 
-func reverse(nums1 []int, from int, to int) {
-	for from < to {
-		nums1[from], nums1[to] = nums1[to], nums1[from]
-		from++
-		to--
-	}
-}
-
-func searchMatrix(matrix [][]int, target int) bool {
-	m := len(matrix)
-	if m == 0 {
-		return false
-	}
-	n := len(matrix[0])
-
-	for i, j := m-1, 0; i >= 0 && j < n; {
-		if target == matrix[i][j] {
-			return true
-		}
-		if target > matrix[i][j] {
-			j++
-		} else {
-			i--
-		}
-	}
-	return false
-}
-
 func majorityElement(nums []int) int {
 	res := 0
 	count := 0
