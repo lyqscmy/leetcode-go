@@ -1,22 +1,16 @@
-121. [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
-122. [买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
-59. [队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
-2. [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) 
-206. [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-92. [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-162. [寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
-543. [二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
-226. [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
-704. [二分查找](https://leetcode-cn.com/problems/binary-search/)
-33. [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
-153. [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+## 简单
+[121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+[122. 买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+[543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+[226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+[704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 
-[别再埋头刷LeetCode之：北美算法面试的题目分类，按类型和规律刷题，事半功倍](https://zhuanlan.zhihu.com/p/89392459)
+## 中等
+[2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) 
+[33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+[92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+[162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+[153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 
-# 滑动窗口
-[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
-[只出现一次的数字](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1106/)
-[多数元素](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1107/)
-[搜索二维矩阵 II](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1108/)
-[合并两个有序数组](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/261/before-you-start/1109/)
+## 困难
