@@ -85,35 +85,6 @@ func singleNumber(nums []int) int {
 	return res
 }
 
-// Search do
-func Search(xs []int, x int) int {
-	i, j := 0, len(xs)
-	for i < j {
-		// i<=h<j
-		h := int(uint(i+j) >> 1)
-		if xs[h] < x {
-			i = h + 1
-		} else {
-			j = h
-		}
-	}
-	return i
-}
-
-func findMin(nums []int) int {
-	i, j := 0, len(nums)
-	for i < j {
-		h := int(uint(i+j) >> 1)
-		if nums[i] < nums[h] {
-			i = h + 1
-		} else {
-			j = h
-		}
-
-	}
-	return i
-}
-
 // // left to right = top to bottom
 // func dtoh(d []int) []int {
 // 	n := len(d)
@@ -165,16 +136,6 @@ func Compare(a, b []int) bool {
 		}
 	}
 	return true
-}
-
-func findPeakElement(nums []int) int {
-	N := len(nums)
-	for i := 0; i < N-1; i++ {
-		if nums[i] > nums[i+1] {
-			return i
-		}
-	}
-	return N - 1
 }
 
 // ParseInt do

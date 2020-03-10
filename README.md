@@ -4,6 +4,12 @@
 2. [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) 
 206. [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 92. [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+162. [寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+543. [二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+226. [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+704. [二分查找](https://leetcode-cn.com/problems/binary-search/)
+33. [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+153. [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 
 [别再埋头刷LeetCode之：北美算法面试的题目分类，按类型和规律刷题，事半功倍](https://zhuanlan.zhihu.com/p/89392459)
 

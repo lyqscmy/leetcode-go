@@ -1,5 +1,6 @@
 package leetcode
 
+// 寻找最小值和最大值
 func maxProfit(prices []int) int {
 	N := len(prices)
 	if N < 2 {

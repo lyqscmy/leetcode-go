@@ -6,24 +6,6 @@ import (
 	"testing"
 )
 
-func TestFindMin(t *testing.T) {
-	tests := []struct {
-		nums []int
-		want int
-	}{
-		{[]int{3, 4, 5, 1, 2}, 1},
-		{[]int{4, 5, 6, 7, 0, 1, 2}, 0},
-	}
-	for _, tt := range tests {
-		t.Run("", func(t *testing.T) {
-			got := findMin(tt.nums)
-			if got != tt.want {
-				t.Errorf("got %v, want %v", got, tt.want)
-			}
-		})
-	}
-}
-
 func TestFindLeftMostBottomNode(t *testing.T) {
 	root := &TreeNode{2, &TreeNode{Val: 1}, &TreeNode{Val: 3}}
 	got := root.findLeftMostBottomNode()
@@ -51,24 +33,6 @@ func TestHtod(t *testing.T) {
 // 	}
 // }
 
-func TestFindPeakElement(t *testing.T) {
-	var tests = []struct {
-		in  []int
-		out []int
-	}{
-		{[]int{1, 2, 3, 1}, []int{2}},
-		{[]int{1, 2, 1, 3, 5, 6, 4}, []int{1, 5}},
-	}
-	for _, tt := range tests {
-		t.Run("", func(t *testing.T) {
-			act := findPeakElement(tt.in)
-			if !contains(tt.out, act) {
-				t.Errorf("got %v, want %v", act, tt.out)
-			}
-		})
-	}
-}
-
 func contains(xs []int, x int) bool {
 	for _, v := range xs {
 		if v == x {
@@ -92,26 +56,6 @@ func TestParseInt(t *testing.T) {
 			act := ParseInt(tt.in)
 			if act != tt.out {
 				t.Errorf("got %v, want %v", act, tt.out)
-			}
-		})
-	}
-}
-
-func TestSearch(t *testing.T) {
-	var tests = []struct {
-		xs  []int
-		x   int
-		exp int
-	}{
-		{[]int{}, 1, 0},
-		{[]int{1}, 1, 0},
-		{[]int{1, 2, 3}, 2, 1},
-	}
-	for _, tt := range tests {
-		t.Run("", func(t *testing.T) {
-			act := Search(tt.xs, tt.x)
-			if act != tt.exp {
-				t.Errorf("got %v, want %v", act, tt.exp)
 			}
 		})
 	}

@@ -1,5 +1,6 @@
 package leetcode
 
+// 累加所有上坡的线段
 func maxProfit2(prices []int) int {
 	N := len(prices)
 	if N < 2 {
