@@ -1,33 +1,5 @@
 package leetcode
 
-func merge(nums1 []int, m int, nums2 []int, n int) {
-	if n == 0 {
-		return
-	}
-
-	if m == 0 {
-		copy(nums1, nums2)
-		return
-	}
-
-	copy(nums1[n:], nums1[:m])
-	for i, j, k := n, 0, 0; j < n; k++ {
-		// fmt.Println(nums1[:k], nums1[i:], nums2[j:])
-		if i >= m+n {
-			copy(nums1[k:], nums2[j:])
-			break
-		}
-
-		if nums1[i] < nums2[j] {
-			nums1[k] = nums1[i]
-			i++
-		} else {
-			nums1[k] = nums2[j]
-			j++
-		}
-	}
-}
-
 func reverse(nums1 []int, from int, to int) {
 	for from < to {
 		nums1[from], nums1[to] = nums1[to], nums1[from]
