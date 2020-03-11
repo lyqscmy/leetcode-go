@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"reflect"
 	"testing"
 )
 
@@ -15,7 +16,7 @@ func TestSearchRange(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run("", func(t *testing.T) {
-			if got := searchRange(tt.xs, tt.x); !Compare(got, tt.want) {
+			if got := searchRange(tt.xs, tt.x); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("searchRange() = %v, want %v", got, tt.want)
 			}
 		})

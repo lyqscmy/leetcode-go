@@ -1,6 +1,9 @@
 package leetcode
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func TestMerge(t *testing.T) {
 	type args struct {
@@ -21,7 +24,7 @@ func TestMerge(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			merge(tt.args.nums1, tt.args.m, tt.args.nums2, tt.args.n)
-			if !Compare(tt.args.nums1, tt.want) {
+			if !reflect.DeepEqual(tt.args.nums1, tt.want) {
 				t.Errorf("got %v, want %v", tt.args.nums1, tt.want)
 			}
 		})

@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"reflect"
 	"testing"
 )
 
@@ -14,7 +15,7 @@ func Test_twoSum(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run("", func(t *testing.T) {
-			if got := twoSum(tt.xs, tt.x); !Compare(got, tt.want) {
+			if got := twoSum(tt.xs, tt.x); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("twoSum() = %v, want %v", got, tt.want)
 			}
 		})

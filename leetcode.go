@@ -35,24 +35,6 @@ func htod(h []int) []int {
 	return d
 }
 
-// Compare do
-func Compare(a, b []int) bool {
-	if a == nil && b == nil {
-		return true
-	}
-
-	if len(a) != len(b) {
-		return false
-	}
-
-	for i := 0; i < len(a); i++ {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-	return true
-}
-
 // ParseInt do
 func ParseInt(s string) int32 {
 	var n int32 = 0
@@ -69,27 +51,4 @@ func ParseInt(s string) int32 {
 		n = n1
 	}
 	return n
-}
-
-func addList(l1 *ListNode, l2 *ListNode) *ListNode {
-	dumy := &ListNode{}
-	node := dumy
-	carry := 0
-	for l1 != nil || l2 != nil {
-		if l1 != nil {
-			carry += l1.Val
-			l1 = l1.Next
-		}
-		if l2 != nil {
-			carry += l2.Val
-			l2 = l2.Next
-		}
-		node.Next = &ListNode{carry % 10, nil}
-		node = node.Next
-		carry /= 10
-	}
-	if carry != 0 {
-		node.Next = &ListNode{carry, nil}
-	}
-	return dumy.Next
 }

@@ -1,6 +1,9 @@
 package leetcode
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func Test_oddEven(t *testing.T) {
 	tests := []struct {
@@ -13,7 +16,7 @@ func Test_oddEven(t *testing.T) {
 	for _, tt := range tests {
 		t.Run("", func(t *testing.T) {
 			oddEven(tt.xs)
-			if !Compare(tt.xs, tt.want) {
+			if !reflect.DeepEqual(tt.xs, tt.want) {
 				t.Errorf("got %v, want %v", tt.xs, tt.want)
 			}
 		})
