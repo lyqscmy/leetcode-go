@@ -5,11 +5,11 @@ package solution
 // 层序遍历树，从上到下从左到右，同一层的节点，只有最左的节点能加入res
 func findLeftMostBottomNode(root *TreeNode) int {
 	res := []int{-1}
-	res = root.findLeftMostBottomNodeImpl(1, res)
+	res = root.dfs(1, res)
 	return res[len(res)-1]
 }
 
-func (root *TreeNode) findLeftMostBottomNodeImpl(index int, res []int) []int {
+func (root *TreeNode) dfs(index int, res []int) []int {
 	if root == nil {
 		return res
 	}
@@ -18,7 +18,7 @@ func (root *TreeNode) findLeftMostBottomNodeImpl(index int, res []int) []int {
 		res = append(res, root.Val)
 	}
 
-	res = root.Left.findLeftMostBottomNodeImpl(index+1, res)
-	res = root.Right.findLeftMostBottomNodeImpl(index+1, res)
+	res = root.Left.dfs(index+1, res)
+	res = root.Right.dfs(index+1, res)
 	return res
 }

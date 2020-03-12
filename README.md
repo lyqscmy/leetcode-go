@@ -9,6 +9,7 @@
 - [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 - [1013. 将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
+- [1071. 字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
 ## 中等
 - [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) 

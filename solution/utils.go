@@ -7,3 +7,12 @@ func sum(xs []int) int {
 	}
 	return acc
 }
+
+// a > b
+func gcd(a, b int) int {
+	c := a % b
+	if c == 0 {
+		return b
+	}
+	return gcd(b, c)
+}
