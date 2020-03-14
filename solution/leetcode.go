@@ -18,9 +18,9 @@ package solution
 
 // left to right = top to bottom
 func htod(h []int) []int {
-	n := len(h)
-	d := make([]int, n)
-	for i := 0; i < n; i++ {
+	N := len(h)
+	d := make([]int, N)
+	for i := 0; i < N; i++ {
 		// step 1
 		d[i] = h[0]
 		h = h[1:]
