@@ -16,3 +16,19 @@ func gcd(a, b int) int {
 	}
 	return gcd(b, c)
 }
+
+func maxInt(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+func maxOfInts(xs []int) int {
+	max := xs[0]
+	for i := 1; i < len(xs); i++ {
+		if xs[i] > max {
+			max = xs[i]
+		}
+	}
+	return max
+}
