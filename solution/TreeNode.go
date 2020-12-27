@@ -1,6 +1,8 @@
 package solution
 
-import jsoniter "github.com/json-iterator/go"
+import (
+	"encoding/json"
+)
 
 //TreeNode is
 type TreeNode struct {
@@ -14,9 +16,9 @@ func (root *TreeNode) equal(other *TreeNode) bool {
 }
 
 func (root *TreeNode) String() string {
-	str, err := jsoniter.MarshalToString(root)
+	str, err := json.MarshalIndent(root, "", "  ")
 	if err != nil {
 		return err.Error()
 	}
-	return str
+	return string(str)
 }
