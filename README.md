@@ -1,9 +1,11 @@
 ## 简单
 
 - [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+- [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 - [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
 - [122. 买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 - [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+- [155. Min Stack](https://leetcode.com/problems/min-stack/)
 - [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
 - [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
@@ -11,7 +13,6 @@
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 - [1013. 将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 - [1071. 字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
-- [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 ## 中等
 
