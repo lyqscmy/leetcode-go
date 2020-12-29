@@ -19,6 +19,7 @@
 - [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
 - [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 - [46. Permutations](https://leetcode.com/problems/permutations/)
+- [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 - [78. Subsets](https://leetcode.com/problems/subsets/)
 - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
