@@ -35,6 +35,7 @@
 - [394. Decode String](https://leetcode.com/problems/decode-string/)
 - [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)
 - [513. 找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)
+- [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
 
