@@ -1,15 +1,14 @@
 package solution
 
 import (
+	"encoding/json"
 	"testing"
-
-	jsoniter "github.com/json-iterator/go"
 )
 
 func TestFindLeftMostBottomNode(t *testing.T) {
 	blob := []byte(`{ "val": 2, "left": { "val": 1 }, "right": { "val": 3 } }`)
 	t1 := &TreeNode{}
-	err := jsoniter.Unmarshal(blob, t1)
+	err := json.Unmarshal(blob, t1)
 	if err != nil {
 		t.Error(err)
 	}
