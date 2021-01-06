@@ -31,6 +31,7 @@
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 - [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
 - [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+- [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 - [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
