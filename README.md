@@ -35,6 +35,7 @@
 - [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
+- [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 - [394. Decode String](https://leetcode.com/problems/decode-string/)
 - [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)
 - [513. 找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)
