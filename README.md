@@ -41,6 +41,7 @@
 - [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 - [394. Decode String](https://leetcode.com/problems/decode-string/)
 - [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)
+- [494. Target Sum](https://leetcode.com/problems/target-sum/)
 - [513. 找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
