@@ -41,5 +41,6 @@
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
+- [1019. Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/)
 
 ## 困难
