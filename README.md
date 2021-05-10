@@ -51,5 +51,7 @@
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
+- [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)
+- [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)
 
 ## 困难
