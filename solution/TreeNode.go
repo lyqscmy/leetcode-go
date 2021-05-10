@@ -5,15 +5,10 @@ import (
 	"strings"
 )
 
-//TreeNode is
 type TreeNode struct {
-	Val   int       `json:val`
-	Left  *TreeNode `json:left`
-	Right *TreeNode `json:right`
-}
-
-func (root *TreeNode) equal(other *TreeNode) bool {
-	return false
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 func (root *TreeNode) String() string {
