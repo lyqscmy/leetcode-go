@@ -32,6 +32,7 @@
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 - [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 - [139. Word Break](https://leetcode.com/problems/word-break/)
+- [143. Reorder List](https://leetcode.com/problems/reorder-list/)
 - [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
 - [148. Sort List](https://leetcode.com/problems/sort-list/)
 - [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
