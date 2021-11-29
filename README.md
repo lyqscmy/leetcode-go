@@ -19,6 +19,7 @@
 - [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
 - [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 - [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+- [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
 - [46. Permutations](https://leetcode.com/problems/permutations/)
 - [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
