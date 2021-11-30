@@ -25,6 +25,7 @@
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 - [78. Subsets](https://leetcode.com/problems/subsets/)
+- [79. Word Search](https://leetcode.com/problems/word-search/)
 - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 - [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 - [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
