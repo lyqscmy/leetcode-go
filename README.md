@@ -28,6 +28,7 @@
 - [79. Word Search](https://leetcode.com/problems/word-search/)
 - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 - [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
+- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)
