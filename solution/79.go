@@ -1,7 +1,9 @@
 package solution
 
+var N int
+
 func exist(board [][]byte, word string) bool {
-	path = make(map[Point]struct{})
+	N = len(board[0])
 	s := make(map[byte]struct{})
 	for i := 0; i < len(word); i++ {
 		s[word[i]] = struct{}{}
@@ -16,15 +18,33 @@ func exist(board [][]byte, word string) bool {
 		}
 	}
 
+	visited = make([][]bool, len(board))
 	A := m[word[0]]
 	for _, a := range A {
-		path[a] = struct{}{}
+		setVisited(a, visited)
 		if dfs(m, word[1:], a) {
 			return true
 		}
-		delete(path, a)
+		unSetVisited(a, visited)
 	}
 	return false
+}
+
+func setVisited(p Point, visited [][]bool) {
+	if visited[p.x] == nil {
+		visited[p.x] = make([]bool, N)
+	}
+	visited[p.x][p.y] = true
+}
+
+func unSetVisited(p Point, visited [][]bool) {
+	visited[p.x][p.y] = false
+}
+func isVisited(p Point, visited [][]bool) bool {
+	if visited[p.x] == nil {
+		return false
+	}
+	return visited[p.x][p.y]
 }
 
 type Point struct {
@@ -32,7 +52,7 @@ type Point struct {
 	y int
 }
 
-var path map[Point]struct{}
+var visited [][]bool
 
 // len(m) <= len(word)
 func dfs(m map[byte][]Point, word string, pre Point) bool {
@@ -41,16 +61,16 @@ func dfs(m map[byte][]Point, word string, pre Point) bool {
 	}
 	A := m[word[0]]
 	for _, a := range A {
-		if _, ok := path[a]; ok {
+		if isVisited(a, visited) {
 			continue
 		}
 		if adjacent(pre, a) {
-			path[a] = struct{}{}
 
+			setVisited(a, visited)
 			if dfs(m, word[1:], a) {
 				return true
 			}
-			delete(path, a)
+			unSetVisited(a, visited)
 		}
 	}
 	return false
