@@ -37,6 +37,7 @@
 - [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 - [139. Word Break](https://leetcode.com/problems/word-break/)
 - [143. Reorder List](https://leetcode.com/problems/reorder-list/)
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 - [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
 - [148. Sort List](https://leetcode.com/problems/sort-list/)
 - [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
