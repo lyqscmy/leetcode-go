@@ -60,6 +60,7 @@
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
 - [817. Linked List Components](https://leetcode.com/problems/linked-list-components/)
+- [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
 - [1019. Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 - [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)
