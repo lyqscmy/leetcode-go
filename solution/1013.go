@@ -30,8 +30,5 @@ func canThreePartsEqualSum(A []int) bool {
 		}
 	}
 	// j<N
-	if j >= N-1 {
-		return false
-	}
-	return true
+	return j < N-1
 }

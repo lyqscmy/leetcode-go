@@ -1,7 +1,5 @@
 package solution
 
-var N int
-
 func exist(board [][]byte, word string) bool {
 	N = len(board[0])
 	s := make(map[byte]struct{})

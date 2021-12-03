@@ -1,8 +1,5 @@
 package solution
 
-const MinInt = -1 << (intSize - 1)
-const intSize = 32 << (^uint(0) >> 63) // 32 or 64
-
 func isValidBST(root *TreeNode) bool {
 	if root == nil {
 		return true
