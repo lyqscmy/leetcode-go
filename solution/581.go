@@ -1,12 +1,5 @@
 package solution
 
-/*
-[2,6,4,8,10,9,15]
-[1,2,3,4]
-[1]
-[2,1]
-[1,3,5,4,2]
-*/
 func findUnsortedSubarray(nums []int) int {
 	N := len(nums)
 	if N <= 1 {
