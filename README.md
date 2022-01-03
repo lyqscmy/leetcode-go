@@ -13,6 +13,7 @@
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 - [1013. 将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 - [1071. 字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
+- [1185. Day of the Week](https://leetcode-cn.com/problems/day-of-the-week/)
 
 ## 中等
 
@@ -69,3 +70,4 @@
 - [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)
 
 ## 困难
+- [23. Merge k Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
