@@ -19,9 +19,12 @@ func minSubArrayLen(s int, nums []int) int {
 	return res
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
+func min(xs ...int) int {
+	res := xs[0]
+	for i := 1; i < len(xs); i++ {
+		if xs[i] < res {
+			res = xs[i]
+		}
 	}
-	return b
+	return res
 }

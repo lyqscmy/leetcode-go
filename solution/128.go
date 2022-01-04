@@ -1,26 +1,29 @@
 package solution
 
+import (
+	"sort"
+)
+
 func longestConsecutive(nums []int) int {
-	set := make(map[int]struct{}, len(nums))
-	for _, num := range nums {
-		set[num] = struct{}{}
+	N := len(nums)
+	if N < 2 {
+		return N
 	}
-	res := 0
-	for num := range set {
-		if _, ok := set[num-1]; ok {
-			continue
-		}
-		count := 1
-		for {
-			if _, ok := set[num+1]; !ok {
-				break
-			}
-			num++
+	sort.Ints(nums)
+	max := 1
+	count := 1
+	pre := nums[0]
+	for i := 1; i < N; i++ {
+		cur := nums[i]
+		if cur == pre || cur == pre+1 {
 			count++
+			if count > max {
+				max = count
+			}
+		} else {
+			count = 0
 		}
-		if count > res {
-			res = count
-		}
+		pre = cur
 	}
-	return res
+	return max
 }

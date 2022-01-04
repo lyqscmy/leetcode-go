@@ -1,24 +1,27 @@
 package solution
 
-//func rightSideView(root *TreeNode) []int {
-//	q1 := NewDeque()
-//	q2 := NewDeque()
-//	q.push(root)
-//	res := make([]int, 0, 4)
-//	// 队列中保存了一层的元素
-//	for !q1.empty() {
-//		var node *TreeNode
-//		for !q1.empty() {
-//			node = q1.pop()
-//			if node.Left!=nil {
-//				q2.push(node.Left)
-//			}
-//			if node.Right!=nil {
-//				q2.push(node.Right)
-//			}
-//		}
-//		res = append(res, node.Val)
-//		q1, q2 = q2, q1
-//	}
-//	return q1.items()
-//}
+func rightSideView(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+	curLevel := make([]*TreeNode, 0)
+	curLevel = append(curLevel, root)
+	res := make([]int, 0)
+	nextLevel := make([]*TreeNode, 0)
+	for len(curLevel) > 0 {
+		var node *TreeNode
+		for len(curLevel) > 0 {
+			node = curLevel[0]
+			if node.Left != nil {
+				nextLevel = append(nextLevel, node.Left)
+			}
+			if node.Right != nil {
+				nextLevel = append(nextLevel, node.Right)
+			}
+			curLevel = curLevel[1:]
+		}
+		res = append(res, node.Val)
+		curLevel, nextLevel = nextLevel, curLevel
+	}
+	return res
+}
