@@ -1,6 +1,6 @@
 package solution
 
 type Tuple struct {
-	first  int
-	second int
+	x int
+	y int
 }

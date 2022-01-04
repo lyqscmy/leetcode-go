@@ -13,6 +13,7 @@
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 - [1013. 将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 - [1071. 字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
+- [1185. Day of the Week](https://leetcode-cn.com/problems/day-of-the-week/)
 
 ## 中等
 
@@ -54,6 +55,7 @@
 - [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 - [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 - [322. Coin Change](https://leetcode.com/problems/coin-change/)
+- [390. Elimination Game](https://leetcode-cn.com/problems/elimination-game/)
 - [394. Decode String](https://leetcode.com/problems/decode-string/)
 - [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)
 - [494. Target Sum](https://leetcode.com/problems/target-sum/)
@@ -70,4 +72,5 @@
 - [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)
 
 ## 困难
+- [23. Merge k Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 - [72. Edit Distance](https://leetcode-cn.com/problems/edit-distance/)
